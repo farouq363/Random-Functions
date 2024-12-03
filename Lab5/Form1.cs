@@ -78,9 +78,9 @@ namespace Lab5
         *  Clear the labels */
         private void ClearOneRoll()
         {
-            lblDice1.Text = string.Empty;
-            lblDice2.Text= string.Empty;
-            lblRollName.Text= string.Empty;
+            lblDice1.Text = "";
+            lblDice2.Text= "";
+            lblRollName.Text= "";
 
 
         }
@@ -93,9 +93,9 @@ namespace Lab5
         *  clear labels and listbox */
         private void ClearStats()
         {
-            lblPass.Text = string.Empty; 
-            lblFail.Text = string.Empty; 
-            lblAverage.Text = string.Empty;
+            lblPass.Text = ""; 
+            lblFail.Text = ""; 
+            lblAverage.Text = "";
             lstMarks.Items.Clear();
             chkSeed.Checked = false;
         }
@@ -281,8 +281,8 @@ namespace Lab5
                 isHandlingCheckChanged = true; 
 
                 DialogResult result = MessageBox.Show(
-            "Are you sure you want to seed value?",
-            "Confirm Seed value",
+                "Are you sure you want to seed value?",
+               "Confirm Seed value",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question);
 
